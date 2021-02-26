@@ -1,0 +1,9 @@
+---
+
+- name: install NanoSim via conda
+  conda_install:
+    name: "nanosim"
+    version: "{{ version }}"
+    executable: "{{ conda_executable }}"
+    channel: "bioconda"
+    environment: "nanosim_{{ env_name }}"
